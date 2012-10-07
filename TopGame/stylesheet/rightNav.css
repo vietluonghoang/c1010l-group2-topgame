@@ -1,0 +1,31 @@
+﻿#wrapLikedGame
+{
+    width: 180px;
+    min-height: 358px;
+    float:left;
+    padding: 14px 14px 14px 14px;
+    background-color: #aa1111;
+    margin: 2px 0px 10px 0px;
+    box-shadow: 2px 2px 2px #000000;
+}
+#wrapLikedGame .game
+{
+    width: 100px;
+    height: 100px;
+    background-color: Black;
+    text-align: center;
+    color: White;
+    box-shadow: 2px 2px 2px #000000;
+    margin: 10px 0px 0px 0px;
+    float: left;
+}
+#wrapLikedGame .like
+{
+    width: 70px;
+    height: 20px;
+    background-color: #ebebeb;
+    padding: 4px 4px 4px 4px;
+    margin: 20px 0px 0px 100px;
+    color: black;
+    border-top-right-radius: 6px;
+}

@@ -1,0 +1,202 @@
+﻿<style type="text/css">
+#wrap
+{
+    margin: 20px auto;
+	width:960px;
+	z-index:50;
+} 
+
+ #left{
+  background-color:Red;
+  float:left;
+  width:200px;
+  height:600px
+ }
+ #login-center
+ {
+    float :left;
+    width:560px;
+    height:600px;
+ }
+ 
+ #right{
+  background-color:Blue;
+  float:right;
+  width:200px;
+  height:600px;
+ }
+ 
+.login-form1
+{
+	padding:5px ;
+	margin:0px auto;
+    width:480px;
+	overflow:hidden;
+	border:1px solid #c2c2c2;
+	background-color:white;
+}	
+.login-top-title
+{
+	font-size:22px;
+	border:2px solid #e4e4e4;
+	padding-bottom:10px;
+	margin-bottom:5px;
+    padding-top:10px;
+	overflow:hidden;
+	background-color:#ccc;
+}
+.login-form
+{
+	padding:5px;
+	overflow:hidden;
+	border:2px solid #e4e4e4;	
+	background-color:#ccc;
+}
+.login-ngoaile
+{
+	padding:5px 0px 5px 0px;
+	overflow:hidden;
+	color:#F00;
+}	
+.login-ngoaile1
+{
+	padding:5px 0px 5px 100px;
+	overflow:hidden;
+	color:#F00;
+}	
+.login-title
+{
+	float:left;
+    width:100px;
+	padding-right:5px;
+	text-align:right;
+	line-height:22px;
+	background-color:#ccc;
+	padding-top:7px;
+}
+.login-field
+{
+	overflow:hidden;
+	padding:5px 0 0 30px;
+	background-color:#ccc;
+}
+.login-right
+{
+	font-size:12px;
+	border:1px solid #c2c2c2;
+	color:#616161;
+	padding:1px;
+	float:left;
+}
+.login-input
+{
+	font-size:12px;
+	border:1px solid #c2c2c2;
+	color:#616161;
+	width:246px;
+	padding:1px;
+}
+.login-field-action
+{
+	float:left;
+	padding:5px 0px 0px 110px;
+	text-align:right;
+	background-color:#ccc;
+	line-height:22px;
+	overflow:hidden;
+	margin-left:25px;
+}
+.login-remember-me
+{
+	font-size:11px;
+	background-color:#ccc;
+	padding:5px 0px 5px 40px;
+	overflow:hidden;
+}
+.login-remember
+{
+	font-size:11px;
+	top:2px;
+}	
+.login-remem
+{
+	background-color:#ccc;
+	font-size:14px;
+	margin-left:90px;
+}
+#login-regis
+{
+    background-color:#ccc;
+	font-size:14px;
+	margin-top:10px;
+	width:inherit;
+	height:90px;
+}
+	#loginlabel3
+	{
+	    margin-left:140px;
+	    }
+	
+	#loginbutton2
+	{
+	   margin-left:190px; 
+	   margin-top:20px;
+	   -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	    }
+	
+ label{
+	
+	top:2px;
+	font-size:13px;
+	}
+   
+span{	
+background-color:#ccc;
+}
+		
+a
+{
+    background-color:#ccc;
+	text-decoration:none;
+	color:#03C;
+	font-size:14px;
+	}	
+ 
+ input[type="text"],input[type="password"] { 		
+    padding: 4px; 
+    margin: 4px 0 4px 0; 
+    background: #fff; 
+    font-size: 12px; 
+    color: #555; 
+    border: 1px solid #ddd;
+	width: 180px;
+	
+	/* -- CSS3 Shadow - create a shadow around each input element -- */
+	box-shadow: 0px 0px 4px #aaa; 
+	-webkit-box-shadow: 0px 0px 4px #aaa;
+	-moz-box-shadow: 0px 0px 4px #aaa; 
+
+	//-moz-border-radius:5px;
+//	-webkit-border-radius:5px;
+ 
+	/* -- CSS3 Transition - define what the transition will be applied to (i.e. the background) -- */		
+	-webkit-transition: background 0.3s linear;
+}
+
+input[type="text"]:hover,input[type="password"]:hover { 
+    background: #eee; 
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:2px solid blue;
+
+}
+input[type="text"]:focus, input[type="password"]:focus { 
+	//-webkit-box-shadow: 0px 0px 4px #0B75D9;
+	//-moz-box-shadow: 0px 0px 4px #0B75D9; 
+   // box-shadow: 0px 0px 4px #0B75D9;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:2px solid red;
+}
+ </style>

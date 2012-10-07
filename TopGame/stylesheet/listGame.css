@@ -1,0 +1,59 @@
+﻿#gameList
+{
+    width: 600px;
+}
+.gameListItem
+{
+    width: 600px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 0px 5px 0px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    min-height: 130px;
+}
+
+.gameListItem .icon
+{
+    background-color: Black;
+    width: 120px;
+    height: 130px;
+    margin: 0px 10px 0px 10px;
+    float: left;
+    box-shadow: 2px 2px 2px #000000;
+}
+
+.gameListItem .name
+{
+    padding-top: 5px;
+    height:25px;
+    color: White;
+    text-align: center;
+}
+
+.gameListItem .image
+{
+}
+
+.gameListItem .desc
+{
+    float: left;
+    border: 1px solid #aa1111;
+    border-top-right-radius: 4px;
+    margin: 5px 0px 0px 0px;
+    height: 80px;
+    width: 430px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.gameListItem .totalLike
+{
+    padding-top: 8px;
+    border-top-right-radius: 4px;
+    background-color: #aa1111;
+    width: 150px;
+    height: 22px;
+    color: White;
+    margin: 5px 0px 0px 120px;
+    text-align: center;
+}

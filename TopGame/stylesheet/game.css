@@ -1,0 +1,69 @@
+﻿#gameWrap
+{
+    min-height: 300px;
+    width: 590px;
+    box-shadow: 2px 2px 2px #000000;
+    background-color: #aa1111;
+}
+#gameTl
+{
+   
+    padding: 5px 5px 5px 5px;
+    background-color: #aa1111;
+}
+#gameWrap #gameImage .im
+{
+    float: left;
+    width: 179px;
+    margin: 5px;
+}
+#gameWrap #gameImage
+{
+    clear:both;
+    margin: 0px 0px 0px 0px;
+    width: 586px;
+    height: 160px;
+    border:2px solid #aa1111;
+    background-color: #aa1111;
+}
+#gameWrap #title 
+{
+    
+    background-color: #aa1111;
+    width: 580px;
+    margin: 0px 0px 0px 0px;
+    padding: 5px;
+}
+
+#gameWrap #title #txt
+{
+    font-family: Verdana;
+    font-size: large;
+    font-weight:bold;
+    color: White;
+    clear:both;
+    
+    }
+#gameWrap #des
+{
+    font-family: Verdana;
+    font-size: small;
+    font-weight:normal;
+    color: White;
+    border: 1px solid #ebebeb;
+    margin: 10px 0px 0px 20px;
+    padding: 5px;
+    width: 500px;
+}
+
+#gameWrap #totalLike
+{
+    color: White;
+    float: left;
+    margin-right: 3px;
+}
+
+#gameWrap #title #likeBtn
+{
+    
+}
