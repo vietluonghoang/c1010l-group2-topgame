@@ -1,0 +1,22 @@
+﻿.gameBarItem
+{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px 10px 10px;
+    text-align:center;
+    background-color: #aa1111;
+    color: White;
+    box-shadow: 2px 2px 2px #000000;
+}
+#gameBarItems
+{
+    width: 540px;
+    height: 120px;
+    float: left;
+    padding-left: 50px;
+}
+.gameBarItem img
+{
+    
+}

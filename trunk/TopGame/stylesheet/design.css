@@ -1,0 +1,71 @@
+﻿body
+{
+    background-color: #999980;
+    font-family: Verdana;
+    font-size: 12px;
+}
+#wraper
+{
+    background-color: White;
+    width: 1024px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    overflow: hidden;
+    border: 1px Solid #aa1111;
+    box-shadow: 1px 1px 1px #000000;
+}
+#header
+{
+    width: 357px;
+    height: 101px;
+    float: left;
+    padding-left: 50px;
+}
+#gameBar
+{
+    width: 540px;
+    height: 150px;
+    overflow: hidden;
+}
+#leftNav
+{
+    width: 170px;
+    clear: both;
+    float: left;
+    
+}
+#border
+{
+    float: left;
+    width: 842px;
+    margin: 0px 0px 0px 10px;
+}
+
+#content
+{
+    background-color: white;
+    width: 600px;
+    min-height: 500px;
+    margin: 0px 0px 0px 0px;
+    padding: 2px;
+    float: left;
+    
+}
+#rightNav
+{
+    
+}
+
+#footer
+{
+    clear: both;
+    text-align: right;
+    color: #aa1111;
+    font-family: Verdana;
+    font-size: small;
+    margin: 0px 20px 5px 0px;
+}
