@@ -15,7 +15,7 @@
     <link rel="Stylesheet" href="/stylesheet/leftNav.css" type="text/css" />
 </head>
 <body>
-<form id="form1" runat="server">
+    <form id="form1" runat="server">
     <div id="wraper">
         <div id="header">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/icon/logo.png" />
@@ -25,45 +25,47 @@
               {
                   if (Convert.ToInt32(Session["role"].ToString()) < 2)
                   { %>
-                    <uc1:topGamePane ID="topGamePane1" runat="server" />
-                 <%}
-              }
+            <uc1:topGamePane ID="topGamePane1" runat="server" />
+            <%}
+                  }
               else
               {%>
             <uc1:topGamePane ID="topGamePane2" runat="server" />
             <%}%>
         </div>
-        <div id="leftNav">
-            <uc4:userPane ID="userPane1" runat="server" />
-            <uc3:leftMenu ID="leftMenu1" runat="server" />
-        </div>
-        <div id="border">
-            <div id="content">
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
+        <div id="center">
+            <div id="leftNav">
+                <uc4:userPane ID="userPane1" runat="server" />
+                <uc3:leftMenu ID="leftMenu1" runat="server" />
             </div>
-            <div id="rightNav">
-            <%if (Session["role"] != null)
-            {
-                if (Convert.ToInt32(Session["role"].ToString()) < 2)
-                { 
-            %>
+            <div id="border">
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="rightNav">
+                    <%if (Session["role"] != null)
+                      {
+                          if (Convert.ToInt32(Session["role"].ToString()) < 2)
+                          { 
+                    %>
                     <uc2:likedGame ID="likedGame1" runat="server" />
-                <%
-                }
-             }
-             else
-             {
-                %>
-                <uc2:likedGame ID="likedGame2" runat="server" />
-              <%
-              }
-              %>
+                    <%
+                        }
+                      }
+                      else
+                      {
+                    %>
+                    <uc2:likedGame ID="likedGame2" runat="server" />
+                    <%
+                        }
+                    %>
+                </div>
             </div>
         </div>
-        <div id="footer">
-            Group 2
-        </div>
+    <div id="footer">
+        Group 2
+    </div>
     </div>
     </form>
 </body>

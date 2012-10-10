@@ -73,12 +73,10 @@ namespace Assignment
                     case "UpdateComponent":
                         UpdateImage(index);
                         Databind();
-                      
                         break;
                     case "DeleteComponent":
                         DeleteImage(index);
                         Databind();
-                   
                         break;
     
                 }
@@ -92,11 +90,10 @@ namespace Assignment
             string id = Request.QueryString["gameId"];
             Image img = (Image)GridView1.Rows[index].FindControl("Image1");
             FileUpload fu = (FileUpload) GridView1.Rows[index].FindControl("FileUpload1");
-
-
             string saveDir = @"\upload\images\";
             string appPath = Request.PhysicalApplicationPath;
 
+            Binding bind = new Binding();
 
             if (fu.HasFile)
             {
@@ -105,12 +102,8 @@ namespace Assignment
 
 
                 fu.SaveAs(savePath);
-
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ConnectionString);
                 con.Open();
-
-            
-
                 String strSQL = "update gameImage set imageFile='"+pos+"' where gameId="+id+" and imageFile='"+img.ImageUrl+"'";
                 SqlCommand myCommand = new SqlCommand(strSQL, con);
 

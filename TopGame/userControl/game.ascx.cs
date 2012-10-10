@@ -24,7 +24,7 @@ namespace Assignment.userControl
             gameTrailer.DataBind();
             Label1.Text = rd.GetString(1);
             Label2.Text = rd.GetString(3);
-            Label3.Text = Convert.ToString(rd.GetInt64(6));
+            Label3.Text = Convert.ToString(rd.GetInt64(9));
             likeBtn1.LblLike = Label3;
             likeBtn1.loadLikeBtn();
         }

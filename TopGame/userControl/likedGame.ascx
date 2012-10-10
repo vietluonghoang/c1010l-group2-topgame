@@ -1,7 +1,9 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="likedGame.ascx.cs" Inherits="TopGame.userControl.likedGame" %>
 <link rel="Stylesheet" href="../stylesheet/rightNav.css" type="text/css" />
 <div id="wrapLikedGame">
-    <asp:Label ID="Label2" runat="server" Text="Do you play ?" ForeColor="White"></asp:Label>
+<div id="title">
+    <asp:Label ID="Label2" runat="server" Text="Do you play ?" ForeColor="Black"></asp:Label>
+    </div>
     <asp:DataList ID="DataList1" runat="server">
         <ItemTemplate>
             <a href="viewGame.aspx?gameId=<%# Eval("id") %>">
