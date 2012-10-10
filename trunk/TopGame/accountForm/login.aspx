@@ -23,8 +23,8 @@
     }
     .login-form1
     {
-        padding: 5px;
-        margin: 10px 5px 0px 0px;
+        padding: 0px 5px 5px 5px;
+        margin: 0px 5px 0px 0px;
         overflow: hidden;
         border-bottom: 1px solid #aa1111;
         border-top: 1px solid #aa1111;
@@ -38,21 +38,21 @@
         padding-top: 10px;
         overflow: hidden;
         background-color: #ebebeb;
+        border: 2px solid #000000;
     }
     .login-form
     {
-        padding: 5px;
+        padding: 0px 5px 5px 5px ;
         overflow: hidden;
-        border: 2px solid #e4e4e4;
     }
     .login-ngoaile
     {
-        padding: 5px 0px 5px 0px;
+        padding: 0px 0px 5px 0px;
         overflow: hidden;
     }
     .login-ngoaile1
     {
-        padding: 5px 0px 5px 100px;
+        padding: 0px 0px 5px 100px;
         overflow: hidden;
         color: #F00;
     }
@@ -242,8 +242,9 @@
                             </div>
                             <!--kết thúc .login-remember-me-->
                             <div class="login-field-action">
-                                <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="#AA1111" OnClientClick="return checkControl();"
-                                    ForeColor="White" Height="30px" Width="90px" BorderStyle="None" OnClick="Button1_Click" />
+                                <asp:Button ID="Button1" runat="server" Text="Submit" BackColor="Black" OnClientClick="return checkControl();"
+                                    ForeColor="White" Height="30px" Width="90px" BorderStyle="None" 
+                                    OnClick="Button1_Click" />
                             </div>
                             <!--kết thúc .login-field-action-->
                         </div>

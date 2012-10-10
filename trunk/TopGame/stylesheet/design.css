@@ -1,12 +1,12 @@
 ﻿body
 {
-    background-color: #999980;
+    background-color: #ebebeb;
     font-family: Verdana;
     font-size: 12px;
 }
 #wraper
 {
-    background-color: White;
+    background-color: white;
     width: 1024px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -16,7 +16,6 @@
     border-top-right-radius: 6px;
     overflow: hidden;
     border: 1px Solid #aa1111;
-    box-shadow: 1px 1px 1px #000000;
 }
 #header
 {
@@ -34,38 +33,40 @@
 #leftNav
 {
     width: 170px;
-    clear: both;
     float: left;
-    
-}
-#border
-{
-    float: left;
-    width: 842px;
-    margin: 0px 0px 0px 10px;
 }
 
 #content
 {
-    background-color: white;
     width: 600px;
-    min-height: 500px;
+    min-height: 300px;
     margin: 0px 0px 0px 0px;
-    padding: 2px;
+    padding: 0px 2px 2px 2px;
     float: left;
     
 }
+
 #rightNav
 {
-    
+    float: left;
 }
+
+#center
+{
+    background-color: #aa1111;
+    box-shadow: 2px 2px 2px #000000;
+    padding: 10px 2px 2px 2px;
+    float: left;
+    width: 1000px;
+    margin: 0px 10px 0px 5px;
+    }
 
 #footer
 {
-    clear: both;
     text-align: right;
     color: #aa1111;
     font-family: Verdana;
     font-size: small;
     margin: 0px 20px 5px 0px;
+    clear: both;
 }

@@ -1,21 +1,19 @@
 ﻿.wrapLeftMenu
 {
     background-color: #aa1111;
-    border: 2px Solid #aa1111;
-    box-shadow: 1px 1px 1px #000000;
-    border-bottom: 20px Solid #aa1111;
-    border-top: 20px Solid #aa1111;
+    border: 2px Solid #000000;
+    border-bottom: 2px Solid #000000;
+    border-top-width: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
     overflow: hidden;
-    margin: 0px 0px 20px 5px;
+    margin: 0px 0px 5px 5px;
     background-color: #aa1111;
-    min-height: 278px;
 }
 
 .wrapLeftMenu a
 {
-    color: White;
+    color: #000000;
     display: block;
     text-decoration: none;
     font-family: Verdana;
@@ -31,10 +29,8 @@
     -o-transition: margin-left 0.5s, color 0.5s, width 0.5s,height 0.5s, background-color 0.5s,left 1.5s, color 0.5s;
     overflow: hidden;
     text-align: center;
-    background-color: Black;
     padding-top: 5px;
     margin: 5px 0px 5px -15px;
-    box-shadow: 1px 1px 1px #000000;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -44,4 +40,6 @@
     background-color: #ebebeb;
     margin-left: 20px;
     color: Black;
+    box-shadow: 1px 1px 1px #000000;
+    
 }

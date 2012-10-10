@@ -34,7 +34,7 @@ namespace Assignment.userControl
             Session.Remove("id");
             Session.Remove("uName");
             Session.Remove("role");
-            Response.Redirect("../Default.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }
