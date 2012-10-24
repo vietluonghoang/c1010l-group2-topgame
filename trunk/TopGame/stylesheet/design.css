@@ -1,12 +1,12 @@
 ﻿body
 {
-    background-color: #ebebeb;
     font-family: Verdana;
     font-size: 12px;
+    background-color: #F3F4EC;
 }
 #wraper
 {
-    background-color: white;
+    background-color: #507642;
     width: 1024px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -15,20 +15,29 @@
     border-bottom-left-radius: 6px;
     border-top-right-radius: 6px;
     overflow: hidden;
-    border: 1px Solid #aa1111;
+    border: 1px Solid #000000;
 }
 #header
 {
-    width: 357px;
-    height: 101px;
+    width:100%;
+    min-height: 150px;
     float: left;
-    padding-left: 50px;
+    padding-left: 10px;
 }
+
+#search
+{
+    width: 300px;
+    float: left;
+    margin-bottom: 10px;
+}
+
 #gameBar
 {
     width: 540px;
     height: 150px;
     overflow: hidden;
+    float: right;
 }
 #leftNav
 {
@@ -38,35 +47,40 @@
 
 #content
 {
-    width: 600px;
-    min-height: 300px;
-    margin: 0px 0px 0px 0px;
-    padding: 0px 2px 2px 2px;
+    width: 620px;
+    min-height: 400px;
+    margin: 0px 0px 0px 5px;
+    padding: 10px;
     float: left;
-    
+    background-color: #F3F4EC;
+    box-shadow: 2px 2px 2px #000000 inset;
+}
+
+#contentAdmin
+{
+    width: 800px;
+    min-height: 400px;
+    margin: 0px 0px 0px 5px;
+    padding: 10px;
+    float: left;
+    background-color: #F3F4EC;
+    box-shadow: 2px 2px 2px #000000 inset;
 }
 
 #rightNav
 {
-    float: left;
+    float: right;
 }
 
-#center
-{
-    background-color: #aa1111;
-    box-shadow: 2px 2px 2px #000000;
-    padding: 10px 2px 2px 2px;
-    float: left;
-    width: 1000px;
-    margin: 0px 10px 0px 5px;
-    }
 
 #footer
 {
+    padding: 10px;
     text-align: right;
-    color: #aa1111;
+    color: #F3F4EC;
     font-family: Verdana;
     font-size: small;
     margin: 0px 20px 5px 0px;
     clear: both;
+    font-size: small;
 }

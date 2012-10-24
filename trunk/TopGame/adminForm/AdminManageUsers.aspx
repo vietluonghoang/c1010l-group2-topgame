@@ -7,7 +7,7 @@
     <style type="text/css">
         .um-labelmanage
         {
-            margin: 10px 0 0 300px;
+            margin: 10px;
         }
         
         input[type="text"]
@@ -25,24 +25,18 @@
         }
     </style>
     <div class="um-labelmanage">
-        <asp:Label ID="Label2" runat="server" Text="User Management" Font-Size="X-Large"
-            ForeColor="white"></asp:Label>
-    </div>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br />
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Label ID="Label3" runat="server" Text="Email" ForeColor="White"></asp:Label>
-    <asp:TextBox ID="TextBox1" runat="server" Style="margin-left: 14px" Width="165px"></asp:TextBox>
-    <asp:Button ID="Button1" runat="server" Style="margin-left: 19px" Text="Search" Width="70px"
-        Height="30px" Font-Size="14px" Font-Bold="True" BackColor="Red" ForeColor="White"
+        <asp:Label ID="Label2" runat="server" Text="User Management" Font-Size="Large"></asp:Label>
+    </div><asp:Label ID="Label3" runat="server" Text="Email" ForeColor="White"></asp:Label>
+    <asp:TextBox ID="TextBox1" runat="server" ></asp:TextBox>
+    <asp:Button ID="Button1" runat="server" Text="Search" Width="70px"
+        Height="30px" Font-Size="14px" Font-Bold="True" 
         BorderColor="White" OnClick="Button1_Click" />
     <br />
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id"
-        CssClass="um-grid" AllowPaging="True" EnableModelValidation="True" OnRowCommand="GridView1_RowCommand"
+        CssClass="um-grid" AllowPaging="True" OnRowCommand="GridView1_RowCommand"
         OnPageIndexChanging="GridView1_PageIndexChanging" Width="100%" BackColor="White"
-        BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+        BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
+        ForeColor="Black" GridLines="Horizontal">
         <Columns>
             <asp:TemplateField HeaderText="Email">
                 <ItemTemplate>
@@ -78,11 +72,14 @@
             </asp:TemplateField>
             <asp:BoundField DataField="id" HeaderText="id" Visible="False" />
         </Columns>
-        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-        <RowStyle BackColor="White" ForeColor="#330099" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
     <br />
 </asp:Content>

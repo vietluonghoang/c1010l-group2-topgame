@@ -8,7 +8,7 @@
     <script src="../script/adminAddGame.js" type="text/javascript" defer></script>
     <div id="addgame-wrap">
         <div class="ag-labeladd">
-            <asp:Label ID="Label2" runat="server" Text="Add New Game" Font-Size="X-Large" ForeColor="#aa1111"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Add New Game" ></asp:Label>
         </div>
         <div id="ag-wrapinput">
             <asp:Label ID="Label1" runat="server" Text="Game Name:"></asp:Label>
@@ -43,12 +43,12 @@
             <br />
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" Style="margin-left: 127px" Text="Submit"
+            <asp:Button ID="Button1" runat="server" Text="Submit"
                 OnClick="Button1_Click" OnClientClick="return validateControl();" CssClass="ag-submit"
-                Font-Bold="True" ForeColor="White" />
-            <asp:Button ID="Button2" runat="server" Style="margin: -10px 0 0 111px;" Text="Game Management"
-                Width="150px" Height="30px" Font-Size="14px" Font-Bold="True" BackColor="Red"
-                ForeColor="White" BorderColor="White" OnClick="Button2_Click" />
+                Font-Bold="True" />
+            <asp:Button ID="Button2" runat="server"  Text="Game Management"
+                 Font-Bold="True" 
+                OnClick="Button2_Click" />
         </div>
     </div>
 </asp:Content>

@@ -3,7 +3,7 @@
 <%@ Register Src="../userControl/leftMenu.ascx" TagName="leftMenu" TagPrefix="uc3" %>
 <%@ Register Src="../userControl/topGamePane.ascx" TagName="topGamePane" TagPrefix="uc1" %>
 <%@ Register Src="../userControl/likedGame.ascx" TagName="likedGame" TagPrefix="uc2" %>
-<%@ Register src="../userControl/userPane.ascx" tagname="userPane" tagprefix="uc5" %>
+<%@ Register Src="../userControl/userPane.ascx" TagName="userPane" TagPrefix="uc5" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
@@ -16,25 +16,24 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
     <div id="wraper">
         <div id="header">
             <asp:Image ID="Image1" runat="server" ImageUrl="~/icon/logo.png" />
         </div>
-        <div id="gameBar">
-        </div>
         <div id="leftNav">
-        <uc5:userPane ID="userPane1" runat="server" />
+            <uc5:userPane ID="userPane1" runat="server" />
             <uc3:leftMenu ID="leftMenu1" runat="server" />
         </div>
-        <div id="border">
+        <div id="contentAdmin">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                
             </asp:ContentPlaceHolder>
         </div>
         <div id="footer">
+        Group 2
         </div>
     </div>
     </form>
 </body>
 </html>
-

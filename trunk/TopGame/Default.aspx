@@ -5,10 +5,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div id="videoDiv" runat="server">
     </div>
-    <uc1:HomeGame ID="HomeGame1" runat="server" />
-    <uc1:HomeGame ID="HomeGame2" runat="server" />
-
 </asp:Content>

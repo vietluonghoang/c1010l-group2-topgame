@@ -10,8 +10,6 @@
         </div>
     </div>
     <div id="title">
-    <div id="totalLike">
-            like: <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></div>
         <%if (Session["id"] != null)
           { %>
         <div id="likeBtn">
@@ -31,7 +29,7 @@
         </div>
     </div>
     <div id="gameImage">
-        <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
+        <asp:DataList ID="DataList1" runat="server" RepeatLayout="Flow">
             <ItemTemplate>
                 <div class="im">
                     <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("imageFile") %>' Height="150px"

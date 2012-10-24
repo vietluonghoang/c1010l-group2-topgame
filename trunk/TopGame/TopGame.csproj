@@ -51,7 +51,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="accountForm\EditProfile.aspx" />
-    <Content Include="accountForm\login.aspx" />
     <Content Include="accountForm\register.aspx" />
     <Content Include="adminForm\AddGame.aspx" />
     <Content Include="adminForm\AdminEditGame.aspx" />
@@ -59,15 +58,21 @@
     <Content Include="adminForm\AdminManageGame.aspx" />
     <Content Include="adminForm\AdminManageImages.aspx" />
     <Content Include="adminForm\AdminManageUsers.aspx" />
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
     <Content Include="bin\TopGame.dll" />
     <Content Include="bin\TopGame.pdb" />
     <Content Include="Default.aspx" />
     <Content Include="icon\Ambient_LienheQuangCao_300x250.swf" />
     <Content Include="icon\comment.png" />
+    <Content Include="icon\delete.png" />
     <Content Include="icon\like.png" />
     <Content Include="icon\logo.png" />
     <Content Include="icon\ttLike.png" />
     <Content Include="icon\unlike.png" />
+    <Content Include="icon\zoom.png" />
     <Content Include="obj\Debug\TopGame.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\TopGame.dll" />
     <Content Include="obj\Debug\TopGame.pdb" />
@@ -77,10 +82,10 @@
     <Content Include="stylesheet\design.css" />
     <Content Include="stylesheet\game.css" />
     <Content Include="stylesheet\gameBar.css" />
-    <Content Include="stylesheet\homeGame.css" />
     <Content Include="stylesheet\leftNav.css" />
+    <Content Include="stylesheet\likeButton.css" />
     <Content Include="stylesheet\listGame.css" />
-    <Content Include="stylesheet\login.css" />
+    <Content Include="stylesheet\loginControl.css" />
     <Content Include="stylesheet\rightNav.css" />
     <Content Include="stylesheet\userPane.css" />
     <Content Include="upload\avatar\audition2_03.jpg" />
@@ -129,6 +134,7 @@
     <Content Include="userControl\likeBtn.ascx" />
     <Content Include="userControl\likedGame.ascx" />
     <Content Include="userControl\listGame.ascx" />
+    <Content Include="userControl\Search.ascx" />
     <Content Include="userControl\topGamePane.ascx" />
     <Content Include="userControl\userPane.ascx" />
     <Content Include="viewGame.aspx" />
@@ -140,6 +146,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="accountForm\EditProfile.aspx.cs">
@@ -148,13 +155,6 @@
     </Compile>
     <Compile Include="accountForm\EditProfile.aspx.designer.cs">
       <DependentUpon>EditProfile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="accountForm\login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="accountForm\login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="accountForm\register.aspx.cs">
       <DependentUpon>register.aspx</DependentUpon>
@@ -277,6 +277,13 @@
     <Compile Include="userControl\listGame.ascx.designer.cs">
       <DependentUpon>listGame.ascx</DependentUpon>
     </Compile>
+    <Compile Include="userControl\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userControl\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
     <Compile Include="userControl\topGamePane.ascx.cs">
       <DependentUpon>topGamePane.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,6 +311,13 @@
     </Compile>
     <Compile Include="viewListGame.aspx.designer.cs">
       <DependentUpon>viewListGame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

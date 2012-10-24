@@ -11,7 +11,10 @@ namespace Assignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            game1.DataBind();
+            if (!Page.IsPostBack)
+            {
+                game1.DataBind();
+            }
         }
     }
 }
