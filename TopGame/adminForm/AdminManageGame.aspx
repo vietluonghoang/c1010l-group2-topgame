@@ -10,7 +10,6 @@
     background-color: Black;
     width: 120px;
     height: 130px;
-    margin: 10px 10px 0px 10px;
     float: left;
     box-shadow: 2px 2px 2px #000000;
 }
@@ -26,10 +25,8 @@
 .gm-totalLike
 {
     padding-top: 8px;
-    background-color: black;
     width: 150px;
     height: 22px;
-    color: White;
     margin:0 0 10px 0px;
     
    
@@ -38,10 +35,8 @@
 .gm-status
 {
     padding-top: 8px;
-    background-color: black;
     width: 150px;
     height: 22px;
-    color: White;
     margin:0 0 10px 0px;
    
     }
@@ -49,10 +44,8 @@
     .gm-cat
 {
     padding-top: 8px;
-    background-color: black;
     width: 150px;
     height: 22px;
-    color: White;
     margin:0 0 10px 0px;
     padding:5px 0 0 2px;
     
@@ -101,23 +94,20 @@
     
      <div class="mg-labelmanage">
     <asp:Label ID="Label2" runat="server" Text="Game Management" 
-        Font-Size="X-Large" ForeColor="white"></asp:Label>
+        Font-Size="Medium"></asp:Label>
         </div>   
 
 
     <br />
      <div id="mg-butadd">
-                            <asp:Button ID="button2" runat="server" Text="Add New Game" Width="120px" Height="35px"
-                                Font-Size="14px" Font-Bold="True" BackColor="#aa1111" ForeColor="White" 
+                            <asp:Button ID="button2" runat="server" Text="Add New Game"
+                                Font-Size="14px" Font-Bold="True" 
                                 BorderColor="White" onclick="button2_Click"
                                />
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:Label ID="Label4" runat="server" Text="Game Name" ForeColor="White"></asp:Label>
-                            <asp:TextBox ID="TextBox1" runat="server" style="margin-left: 12px" 
-                                Width="135px"></asp:TextBox>
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                             <asp:Button ID="Button3" runat="server" onclick="Button3_Click" 
-                                style="margin: 10px;" Text="Search"  Width="70px" Height="35px"
-                                Font-Size="14px" Font-Bold="True" BackColor="#aa1111" ForeColor="White" 
+                                 Text="Search"  Width="70px" Height="35px"
+                                Font-Size="14px" Font-Bold="True" 
                                 BorderColor="White"/>
      </div>
 
@@ -129,8 +119,9 @@
     ShowFooter="True"
     onrowcommand="GridView1_RowCommand"
     AllowPaging="True"
-     PageSize="5" EnableModelValidation="True" BackColor="White" 
-         BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Width="100%"
+     PageSize="5" BackColor="White" 
+         BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" 
+            Width="100%" ForeColor="Black" GridLines="Horizontal"
     
     >
     <Columns>
@@ -205,11 +196,14 @@
 
     </Columns>
     
-        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-        <RowStyle BackColor="White" ForeColor="#330099" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     
     </asp:GridView>
 

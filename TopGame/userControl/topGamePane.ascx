@@ -3,7 +3,7 @@
 <div id="gameBarItems">
     <asp:DataList ID="DataList1" runat="server" RepeatDirection="Horizontal">
         <ItemTemplate>
-            <a href="viewGame.aspx?gameId=<%# Eval("id") %>" >
+            <a href="../viewGame.aspx?gameId=<%# Eval("id") %>" >
                 <div class="gameBarItem">
                     <asp:Image ID="Image1" runat="server" Height="77px" ImageUrl='<%# Eval("posterFile") %>'
                         Width="100px" onprerender="Image1_PreRender" />

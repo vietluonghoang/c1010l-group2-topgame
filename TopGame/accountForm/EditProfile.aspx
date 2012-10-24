@@ -5,18 +5,17 @@
     <style type="text/css">
     #wrapProfile
     {
-        border: 1px solid #aa1111;
     
     }
     .ep-image
     {}
     </style>
     <div id="wrapProfile">
-    <asp:GridView ID="gvEditAva" runat="server" AutoGenerateColumns="False" EnableModelValidation="True"
-        GridLines="None" OnRowCancelingEdit="gvEditAva_RowCancelingEdit" OnRowEditing="gvEditAva_RowEditing"
+    <asp:GridView ID="gvEditAva" runat="server" AutoGenerateColumns="False" 
+            OnRowCancelingEdit="gvEditAva_RowCancelingEdit" OnRowEditing="gvEditAva_RowEditing"
         ShowHeader="False" Width="100%" OnRowUpdating="gvEditAva_RowUpdating" 
-        CellPadding="4" ForeColor="#333333">
-        <AlternatingRowStyle BackColor="White" />
+        CellPadding="3" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" 
+            BorderWidth="1px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -42,19 +41,23 @@
                 <ItemStyle Wrap="False" />
             </asp:TemplateField>
         </Columns>
-        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <FooterStyle BackColor="White" ForeColor="#000066" />
+        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+        <RowStyle ForeColor="#000066" />
+        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F1F1F1" />
+        <SortedAscendingHeaderStyle BackColor="#007DBB" />
+        <SortedDescendingCellStyle BackColor="#CAC9C9" />
+        <SortedDescendingHeaderStyle BackColor="#00547E" />
     </asp:GridView>
     <%if (Convert.ToInt32(Session["role"].ToString()) < 3)
       { %>
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" EnableModelValidation="True"
-        GridLines="None" CssClass="ep-grid1" OnRowCancelingEdit="GridView1_RowCancelingEdit"
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False"
+        GridLines="Horizontal" CssClass="ep-grid1" OnRowCancelingEdit="GridView1_RowCancelingEdit"
         OnRowEditing="GridView1_RowEditing" OnRowUpdating="GridView1_RowUpdating" 
-        CellPadding="4" ForeColor="#333333" Width="100%">
-        <AlternatingRowStyle BackColor="White" />
+        CellPadding="4" ForeColor="Black" Width="100%" BackColor="White" 
+            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -82,19 +85,23 @@
                     <asp:LinkButton ID="lbtUpdate" runat="server" CommandName="Update" Text="Update"></asp:LinkButton>
                     <asp:LinkButton ID="lbtCancel" runat="server" CommandName="Cancel" Text="Cancel"></asp:LinkButton>
                 </EditItemTemplate>
+                <ControlStyle Width="30px" />
             </asp:TemplateField>
         </Columns>
-        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" EnableModelValidation="True"
-        GridLines="None" CssClass="ep-grid1" OnRowCancelingEdit="GridView2_RowCancelingEdit"
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False"
+        GridLines="Horizontal" CssClass="ep-grid1" OnRowCancelingEdit="GridView2_RowCancelingEdit"
         OnRowEditing="GridView2_RowEditing" OnRowUpdating="GridView2_RowUpdating" 
-        CellPadding="4" ForeColor="#333333" Width="100%">
-        <AlternatingRowStyle BackColor="White" />
+        CellPadding="4" ForeColor="Black" Width="100%" BackColor="White" 
+            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -122,20 +129,24 @@
                     <asp:LinkButton ID="lbtUpdateUN" runat="server" CommandName="Update" Text="Update"></asp:LinkButton>
                     <asp:LinkButton ID="lbtCancelUN" runat="server" CommandName="Cancel" Text="Cancel"></asp:LinkButton>
                 </EditItemTemplate>
+                <ControlStyle Width="20px" />
             </asp:TemplateField>
         </Columns>
-        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
     <%} %>
-    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" EnableModelValidation="True"
-        GridLines="None" CssClass="ep-grid1" OnRowCancelingEdit="GridView3_RowCancelingEdit"
+    <asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False"
+        GridLines="Horizontal" CssClass="ep-grid1" OnRowCancelingEdit="GridView3_RowCancelingEdit"
         OnRowEditing="GridView3_RowEditing" OnRowUpdating="GridView3_RowUpdating" 
-        CellPadding="4" ForeColor="#333333" Width="100%">
-        <AlternatingRowStyle BackColor="White" />
+        CellPadding="4" ForeColor="Black" Width="100%" BackColor="White" 
+            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" >
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -169,17 +180,20 @@
                 </EditItemTemplate>
             </asp:TemplateField>
         </Columns>
-        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
-    <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False" EnableModelValidation="True"
-        GridLines="None" CssClass="ep-grid1" OnRowCancelingEdit="GridView4_RowCancelingEdit"
+    <asp:GridView ID="GridView4" runat="server" AutoGenerateColumns="False"
+        GridLines="Horizontal" CssClass="ep-grid1" OnRowCancelingEdit="GridView4_RowCancelingEdit"
         OnRowEditing="GridView4_RowEditing" OnRowUpdating="GridView4_RowUpdating" 
-        CellPadding="4" ForeColor="#333333" Width="100%">
-        <AlternatingRowStyle BackColor="White" />
+        CellPadding="4" ForeColor="Black" Width="100%" BackColor="White" 
+            BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -208,11 +222,14 @@
                 </EditItemTemplate>
             </asp:TemplateField>
         </Columns>
-        <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
-        <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
-        <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
     </asp:GridView>
     </div>
 </asp:Content>

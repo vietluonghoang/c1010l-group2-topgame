@@ -1,30 +1,28 @@
 ﻿#wrapUser
 {
-    width: 161px;
-    border: 2px solid #000000;
-    margin: 0px 5px 0px 5px;
-    background-color:#ebebeb;
+    width: 180px;
+    margin: 0px 0px 0px 0px;
+    background-color:#507642;
     padding-bottom: 10px;
-    
+    padding-top: 10px;
 }
 
 #wrapUser a
 {
-    color: #aa1111;
+    color: #000000;
     
 }
 
 #wrapUser .button
 {
-    margin: 5px 0px 0px 0px;
-    text-align: center;
+    margin: 5px 0px 0px 10px;
 }
 
 #wrapUser #name
 {
     text-align: center;
-    color: White;
-    background-color: #aa1111;
+    color: #000000;
+    background-color: #A37B45;
     padding: 3px;
 }
 

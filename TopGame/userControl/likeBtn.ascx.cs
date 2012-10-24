@@ -11,57 +11,62 @@ namespace Assignment.userControl
 {
     public partial class likeBtn : System.Web.UI.UserControl
     {
+        protected int _gameId;
 
-        Label lblLike;
-
-        public Label LblLike
+        public int GameId
         {
-            get { return lblLike; }
-            set { lblLike = value; }
+            get { return _gameId; }
+            set { _gameId = value; }
+        }
+
+        protected int _userId;
+
+        public int UserId
+        {
+            get { return _userId; }
+            set { _userId = value; }
         }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                if (Session["id"] != null)
+                {
+                    UserId = Convert.ToInt32(Session["id"]);
+                }
+            }
         }
 
 
         protected void ImageButtonLike_Click(object sender, ImageClickEventArgs e)
         {
-            int gameId = Convert.ToInt32(Request.QueryString["gameId"]);
-            int userId = Convert.ToInt32(Session["id"].ToString());
             Binding bind = new Binding();
-            SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + gameId + "and userId =" + userId);
+            SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + GameId + " and userId = " + UserId);
             if (!rd.HasRows)
             {
-                bind.executeQry("insert into userLike values(" + gameId + "," + userId + ")");
-                bind.executeQry("update game set totalLike = totalLike + 1 where id = " + gameId);
+                bind.executeQry("insert into userLike values(" + GameId + "," + UserId + ")");
+                bind.executeQry("update game set totalLike = totalLike + 1 where id = " + GameId);
             }
             loadLikeBtn();
         }
 
         protected void ImageButtonUnlike_Click1(object sender, ImageClickEventArgs e)
         {
-            int gameId = Convert.ToInt32(Request.QueryString["gameId"]);
-            int userId = Convert.ToInt32(Session["id"].ToString());
             Binding bind = new Binding();
-            SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + gameId + "and userId =" + userId);
+            SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + GameId + "and userId =" + UserId);
             if (rd.HasRows)
             {
-                bind.executeQry("delete from userLike where gameId = " + gameId + " and userId = " + userId);
-                bind.executeQry("update game set totalLike = totalLike - 1 where id = " + gameId);
+                bind.executeQry("delete from userLike where gameId = " + GameId + " and userId = " + UserId);
+                bind.executeQry("update game set totalLike = totalLike - 1 where id = " + GameId);
             }
             loadLikeBtn();
         }
 
         public void loadLikeBtn()
         {
-            if (Session["id"] != null)
-            {
-                int gameId = Convert.ToInt32(Request.QueryString["gameId"]);
-                int userId = Convert.ToInt32(Session["id"].ToString());
                 Binding bind = new Binding();
-                SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + gameId + "and userId =" + userId);
+                SqlDataReader rd = bind.getDataReader("select * from userLike where gameId = " + GameId + "and userId =" + UserId);
                 
                 if (rd.HasRows)
                 {
@@ -75,11 +80,11 @@ namespace Assignment.userControl
                 }
                 ImageButtonUnlike.DataBind();
                 ImageButtonLike.DataBind();
-                rd = bind.getDataReader("select * from game where id=" + gameId);
+                rd = bind.getDataReader("select * from game where id=" + GameId);
                 rd.Read();
-                lblLike.Text = Convert.ToString(rd.GetInt64(6));
+                lblLike.Text = Convert.ToString(rd.GetInt64(9));
                 lblLike.DataBind();
-            }
+            
         }
     }
 }

@@ -23,8 +23,10 @@ namespace Assignment.userControl
         {
             int gameId = Convert.ToInt32(Request.QueryString["gameId"].ToString());
             Binding bind = new Binding();
-            DataList1.DataSource = bind.getData("select comment.*, tblUser.userName, tblUser.avaFile from comment, tblUser where comment.userId = tblUser.id and comment.status = 1 and comment.gameId = " + gameId + " order by comment.postTime");
-            DataList1.DataBind();
+            GridView1.DataSource = bind.getData("select comment.*, tblUser.userName, tblUser.avaFile from comment, tblUser where comment.userId = tblUser.id and comment.status = 1 and comment.gameId = " + gameId + " order by comment.postTime");
+            GridView1.ShowHeader = false;
+            GridView1.BorderWidth = 0;
+            GridView1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -35,6 +37,12 @@ namespace Assignment.userControl
             Binding bind = new Binding();
             bind.executeQry("insert into comment values("+gameId+","+userId+",'"+TextBox1.Text+"','"+time+"','true')");
             getComment();
+        }
+
+        protected void GridView1_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            GridView1.PageIndex = e.NewPageIndex;
+            GridView1.DataBind();
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿#wrapCm #txt
 {
     float: left;
-    width: 320px;
     margin: 10px;
     overflow: hidden;
 }
@@ -14,27 +13,18 @@
 #wrapCm .user
 {
     margin: 0px 5px 20px 20px;
-    float:left;
+    float: left;
     width: 50px;
-}
-#wrapCm .name
-{
-    text-align: center;
-    background-color: Black;
-    color:White;
-    font-size:smaller;
 }
 #wrapCm .comment
 {
-    border: 1px solid white;
     float: left;
-     min-height: 50px;
-     width: 460px;
-     color: White;
-     padding: 5px;
-     border-bottom-right-radius: 10px;
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
-     background-color:Black;
-     
+    padding: 2px;
+    width: 350px;
+    padding: 10px 5px 10px 5px;
+}
+#wrapCm 
+{
+    float: left;
+    width: 400px;
 }

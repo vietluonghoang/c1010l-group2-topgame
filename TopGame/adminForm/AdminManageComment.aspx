@@ -4,12 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <style type="text/css">
-
+.cm-labelmanage
+{
+    margin: 20px;
+}
 </style>
 
 <div class="cm-labelmanage">
     <asp:Label ID="Label2" runat="server" Text="Comment Management" 
-        Font-Size="X-Large" ForeColor="white"></asp:Label>
+        Font-Size="Medium"></asp:Label>
         </div>
 
 
@@ -17,12 +20,12 @@
             AutoGenerateColumns="False" 
             DataKeyNames="id"
             AllowPaging="True"
-            CssClass="cm-grid"
-            EnableModelValidation="True" 
+            CssClass="cm-grid" 
             onpageindexchanging="GridView1_PageIndexChanging" 
             onrowcommand="GridView1_RowCommand" CellPadding="4" Width="100%" 
-            BackColor="White" BorderColor="#CC9966" BorderStyle="None" 
-        BorderWidth="1px" AllowSorting="True">
+            BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" 
+        BorderWidth="1px" AllowSorting="True" ForeColor="Black" 
+        GridLines="Horizontal" PageSize="15">
 
     <Columns>
     
@@ -88,11 +91,15 @@
 
     </Columns>
 
-        <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
-        <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
-        <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
-        <RowStyle BackColor="White" ForeColor="#330099" />
-        <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+        <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
+        <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
+        <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
+
+        <SortedAscendingCellStyle BackColor="#F7F7F7" />
+        <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
+        <SortedDescendingCellStyle BackColor="#E5E5E5" />
+        <SortedDescendingHeaderStyle BackColor="#242121" />
 
     </asp:GridView>
 

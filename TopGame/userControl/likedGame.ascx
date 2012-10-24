@@ -2,11 +2,11 @@
 <link rel="Stylesheet" href="../stylesheet/rightNav.css" type="text/css" />
 <div id="wrapLikedGame">
 <div id="title">
-    <asp:Label ID="Label2" runat="server" Text="Do you play ?" ForeColor="Black"></asp:Label>
+    <asp:Label ID="Label2" runat="server" Text="Do you play ?" ></asp:Label>
     </div>
     <asp:DataList ID="DataList1" runat="server">
         <ItemTemplate>
-            <a href="viewGame.aspx?gameId=<%# Eval("id") %>">
+            <a href="../viewGame.aspx?gameId=<%# Eval("id") %>">
                 <div class="game">
                     <div class="image">
                         <asp:Image ID="Image1" runat="server" Height="80px" Width="100px" ImageUrl='<%# Eval("posterFile") %>' />
@@ -21,7 +21,7 @@
                 <asp:Label ID="Label3" runat="server" Text='<%# Eval("totalLike") %>'></asp:Label>
             </div>
             <div class="like">
-                <asp:Image ID="Image2" runat="server"  ImageUrl="/icon/comment.png"/>:
+                <asp:Image ID="Image2" runat="server"  ImageUrl="/icon/comment.png"/>
                 <asp:Label ID="Label4" runat="server" Text='<%# Eval("cm") %>'></asp:Label>
             </div>
         </ItemTemplate>
