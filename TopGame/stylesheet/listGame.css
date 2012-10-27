@@ -2,6 +2,14 @@
 {
     width: 600px;
 }
+ 
+#gameList #error
+{
+    text-align: center;
+    margin: 50px;
+    font-size: larger;
+}
+
 .gameListItem
 {
     width: 600px;
@@ -14,7 +22,7 @@
 
 .gameListItem .icon
 {
-    background-color: Black;
+    background-color: #86942A;
     width: 120px;
     height: 130px;
     margin: 0px 10px 0px 10px;
@@ -37,23 +45,18 @@
 .gameListItem .desc
 {
     float: left;
-    border: 1px solid #aa1111;
+    border: 1px solid #86942A;
     border-top-right-radius: 4px;
     margin: 5px 0px 0px 0px;
     height: 80px;
     width: 430px;
     overflow: hidden;
     padding: 5px;
+    color: #86942A;
 }
 
 .gameListItem .totalLike
 {
-    padding-top: 8px;
     border-top-right-radius: 4px;
-    background-color: #aa1111;
-    width: 150px;
-    height: 22px;
-    color: White;
     margin: 5px 0px 0px 120px;
-    text-align: center;
 }

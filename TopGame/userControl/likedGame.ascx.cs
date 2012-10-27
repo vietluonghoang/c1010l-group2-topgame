@@ -17,5 +17,7 @@ namespace TopGame.userControl
             DataList1.DataBind();
             bind.Connection.Close();
         }
+
+        
     }
 }

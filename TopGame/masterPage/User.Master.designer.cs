@@ -76,15 +76,6 @@ namespace TopGame {
         protected global::TopGame.userControl.topGamePane topGamePane2;
         
         /// <summary>
-        /// Search1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::TopGame.userControl.Search Search1;
-        
-        /// <summary>
         /// userPane1 control.
         /// </summary>
         /// <remarks>
