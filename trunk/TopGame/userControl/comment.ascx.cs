@@ -17,13 +17,14 @@ namespace Assignment.userControl
             {
                 
             }
+            
         }
 
         protected void getComment()
         {
             int gameId = Convert.ToInt32(Request.QueryString["gameId"].ToString());
             Binding bind = new Binding();
-            GridView1.DataSource = bind.getData("select comment.*, tblUser.userName, tblUser.avaFile from comment, tblUser where comment.userId = tblUser.id and comment.status = 1 and comment.gameId = " + gameId + " order by comment.postTime");
+            GridView1.DataSource = bind.getData("select comment.*, tblUser.userName, tblUser.avaFile from comment, tblUser where comment.userId = tblUser.id and comment.status = 1 and comment.gameId = " + gameId + " order by comment.postTime desc");
             GridView1.ShowHeader = false;
             GridView1.BorderWidth = 0;
             GridView1.DataBind();
@@ -43,6 +44,11 @@ namespace Assignment.userControl
         {
             GridView1.PageIndex = e.NewPageIndex;
             GridView1.DataBind();
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            getComment();
         }
     }
 }

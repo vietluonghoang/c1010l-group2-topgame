@@ -19,18 +19,17 @@
 }
 #header
 {
-    width:100%;
+    width: 100%;
     min-height: 150px;
     float: left;
     padding-left: 10px;
 }
 
-#search
+#search #searchBtn
 {
-    width: 300px;
-    float: left;
-    margin-bottom: 10px;
+    margin-left: 5px;
 }
+
 
 #gameBar
 {

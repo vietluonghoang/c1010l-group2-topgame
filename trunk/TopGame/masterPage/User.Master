@@ -4,7 +4,6 @@
 <%@ Register Src="../userControl/topGamePane.ascx" TagName="topGamePane" TagPrefix="uc1" %>
 <%@ Register Src="../userControl/likedGame.ascx" TagName="likedGame" TagPrefix="uc2" %>
 <%@ Register Src="../userControl/userPane.ascx" TagName="userPane" TagPrefix="uc4" %>
-<%@ Register Src="../userControl/Search.ascx" TagName="Search" TagPrefix="uc5" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
@@ -35,9 +34,7 @@
                 <uc1:topGamePane ID="topGamePane2" runat="server" />
                 <%}%>
             </div>
-            <div id="search">
-                <uc5:Search ID="Search1" runat="server" />
-            </div>
+            
         </div>
         <div id="leftNav">
             <uc4:userPane ID="userPane1" runat="server" />
@@ -48,6 +45,7 @@
             </asp:ContentPlaceHolder>
         </div>
         <div id="rightNav">
+            </div>
             <%if (Session["role"] != null)
               {
                   if (Convert.ToInt32(Session["role"].ToString()) < 2)
@@ -64,7 +62,6 @@
             <%
                 }
             %>
-        </div>
         <div id="footer">
             Group 2
         </div>

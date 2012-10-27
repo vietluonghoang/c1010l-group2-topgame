@@ -2,7 +2,7 @@
 <%@ Register Src="listGame.ascx" TagName="listGame" TagPrefix="uc1" %>
 <%@ Register src="likeBtn.ascx" tagname="likeBtn" tagprefix="uc2" %>
 <%@ Register src="comment.ascx" tagname="comment" tagprefix="uc3" %>
-<link rel="Stylesheet" href="/stylesheet/game.css" type="text/css" />
+<link rel="Stylesheet" href="stylesheet/game.css" type="text/css" />
 
 <div id="gameWrap">
     <div id="gameTl">

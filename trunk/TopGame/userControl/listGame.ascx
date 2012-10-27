@@ -2,8 +2,12 @@
 <%@ Register Src="likeBtn.ascx" TagName="likeBtn" TagPrefix="uc1" %>
 <link rel="Stylesheet" href="../stylesheet/listGame.css" type="text/css" />
 <div id="gameList">
-    <asp:DataList ID="DataList1" runat="server">
-        <ItemTemplate>
+    
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+        onrowdatabound="GridView1_RowDataBound">
+        <Columns>
+            <asp:TemplateField>
+            <ItemTemplate>
             <div class="gameListItem">
                 <a href="viewGame.aspx?gameId=<%# Eval("id") %>">
                     <div class="icon">
@@ -15,12 +19,20 @@
                     </div>
                 </a>
                 <div class="totalLike">
-                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("totalLike") %>'></asp:Label>
+                    <uc1:likeBtn ID="likeBtn1" GameId='<%# Eval("id") %>' runat="server" />
                 </div>
                 <div class="desc">
-                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("description") %>'></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text='<%# Eval("description") %>' ></asp:Label>
                 </div>
             </div>
-        </ItemTemplate>
-    </asp:DataList>
+            </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+        <EmptyDataTemplate>
+        <div id="error">
+            <asp:Label ID="Label3" runat="server" ForeColor="#993300" 
+                Text="Resource cannot be found !"></asp:Label>
+        </div>
+        </EmptyDataTemplate>
+    </asp:GridView>
 </div>

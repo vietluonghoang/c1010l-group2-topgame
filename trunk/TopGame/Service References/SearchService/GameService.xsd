@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:12345/GameService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SearchTopGame" />
+  <xs:element name="GetGameByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetGameByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SearchTopGame" minOccurs="0" name="GetGameByNameResult" nillable="true" type="q1:GameDataSet" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

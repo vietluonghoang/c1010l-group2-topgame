@@ -90,7 +90,7 @@ namespace Assignment
             string id = Request.QueryString["gameId"];
             Image img = (Image)GridView1.Rows[index].FindControl("Image1");
             FileUpload fu = (FileUpload) GridView1.Rows[index].FindControl("FileUpload1");
-            string saveDir = @"\upload\images\";
+            string saveDir = @"/upload/images/";
             string appPath = Request.PhysicalApplicationPath;
 
             Binding bind = new Binding();
@@ -142,7 +142,7 @@ namespace Assignment
         {
             string id = Request.QueryString["gameId"];
 
-            string saveDir = @"\upload\images\";
+            string saveDir = @"/upload/images/";
             string appPath = Request.PhysicalApplicationPath;
 
             

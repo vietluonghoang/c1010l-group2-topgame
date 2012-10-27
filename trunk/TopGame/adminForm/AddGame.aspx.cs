@@ -7,6 +7,8 @@ using System.Web.UI.WebControls;
 using TopGame.Services;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Drawing;
+using System.Drawing.Imaging;
 
 namespace Assignment
 {
@@ -57,9 +59,9 @@ namespace Assignment
                 string savePath = appPath + saveDir + Server.HtmlEncode(FileUpload1.FileName);
 
                 FileUpload1.SaveAs(savePath);
-
                 string cat = DropDownList1.SelectedValue;
                 string pos = saveDir + Server.HtmlEncode(FileUpload1.FileName);
+                
 
                 SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["connection"].ConnectionString);
                 con.Open();
@@ -89,7 +91,7 @@ namespace Assignment
             Response.Redirect("AdminManageGame.aspx");
         }
 
-
+        
 
     }
 }
